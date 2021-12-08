@@ -49,7 +49,7 @@ if sidebar == "注册":
                     s = ''.join(project_name)
                     with open("zhucebiao.txt", "rt", encoding='utf-8') as f:
                         for i in f:
-                            l_line = i.split()
+                            l_line = i.split(",")
                             id_regist = l_line[0]
                             flag = 1
                             if id_regist == project_user:
