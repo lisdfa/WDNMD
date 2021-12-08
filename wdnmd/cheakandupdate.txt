@@ -1,3 +1,0 @@
-NAME,NUMBER,USER,USERGROUP
-lkc,110,student,vpp(very poor people)
-yjh,110,administrator,vip
