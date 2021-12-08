@@ -1,0 +1,3 @@
+LOST,PLACE,TIME,SHAPE,ANYOTHERS
+笔,A教 位置1,no,no,no
+本子,B教 位置2,no,no,no
