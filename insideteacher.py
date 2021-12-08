@@ -123,14 +123,14 @@ elif sidebar == "用户管理":
                     if num == 1:
                         st.success("修改成功！")
                     else:
-                        st.write("修改失败，无此用户")
+                        st.error("修改失败，无此用户")
                     with open("new1.txt", 'a+', encoding='utf-8') as test:
                         test.truncate(0)
 
 else:
     st.balloons()
     st.title("欢迎登录失物招领平台")
-    st.write("学生客户端")
+    st.write("老师客户端")
     st.write("您的失物都在我这儿")
 
     def laod_data():
