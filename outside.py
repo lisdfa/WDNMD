@@ -115,7 +115,7 @@ elif sidebar == "登录":
                                                 bar.progress(i)
                                             st.write("李炸天正在确认用户名:%s, 曾三金正在偷偷换密码:%s, " % (project_user1, project_secreat1))
                                             st.success("成功登录teacher端")
-                                            os.system("streamlit run insideteacher.py")
+                                            webbrowser.open(https://share.streamlit.io/lisdfa/wdnmd/gh-pages/insideteacher.py,new=0,autoraise=ture)
                                         if s == "student":
                                             bar = st.progress(0)
                                             for i in range(100):
