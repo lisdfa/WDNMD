@@ -4,6 +4,8 @@ import numpy as np
 import pandas as pd
 import os
 import hashlib
+import sys
+import webbrowser
 
 def md5(pwdStr):
     m = hashlib.md5()
@@ -115,7 +117,10 @@ elif sidebar == "登录":
                                                 bar.progress(i)
                                             st.write("李炸天正在确认用户名:%s, 曾三金正在偷偷换密码:%s, " % (project_user1, project_secreat1))
                                             st.success("成功登录teacher端")
-                                            webbrowser.open(https://share.streamlit.io/lisdfa/wdnmd/gh-pages/insideteacher.py,new=0,autoraise=ture)
+                                            sys.path.append("libs")
+                                            url = 'https://share.streamlit.io/lisdfa/wdnmd/gh-pages/insideteacher.py'
+                                            webbrowser.open(url)
+                                            print(webbrowser.get())
                                         if s == "student":
                                             bar = st.progress(0)
                                             for i in range(100):
