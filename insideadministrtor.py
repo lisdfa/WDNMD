@@ -3,7 +3,6 @@ import streamlit as st
 import time
 import numpy as np
 import pandas as pd
-from streamlit_folium import folium_static
 import folium
 import os
 import hashlib
@@ -66,12 +65,6 @@ if sidebar == "失物管理":
                 st.write("丢失地点%s, 丢失时间%s, 丢失特征%s, 备注信息%s," %
                             (project_info_1, project_info_2, project_info_3,project_info_4))
                 st.success("提交成功")
-    "# 您掉落物品的地点"
-    st.write("具体地点在小蓝针所指处")
-    m = folium.Map(location=[30.725526, 103.950056], zoom_start=16)
-    tooltip = "Liberty Bell"
-    folium.Marker([30.725526, 103.950056], popup="Liberty Bell", tooltip=tooltip).add_to(m)
-    folium_static(m)
 
 
 
