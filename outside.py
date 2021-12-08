@@ -125,7 +125,7 @@ elif sidebar == "登录":
                                                 bar.progress(i)
                                             st.write("李炸天正在确认用户名:%s, 曾三金正在偷偷换密码:%s, " % (project_user1, project_secreat1))
                                             st.success("成功登录student端")
-                                            os.system("streamlit run insidestudent.py")
+                                            st.write("https://share.streamlit.io/lisdfa/wdnmd/gh-pages/insidestudent.py")
                                         if s == "administrtor":
                                             bar = st.progress(0)
                                             for i in range(100):
@@ -133,7 +133,7 @@ elif sidebar == "登录":
                                                 bar.progress(i)
                                             st.write("李炸天正在确认用户名:%s, 曾三金正在偷偷换密码:%s, " % (project_user1, project_secreat1))
                                             st.success("成功登录administrtor端")
-                                            os.system("streamlit run insideadministrtor.py")
+                                            st.write("https://share.streamlit.io/lisdfa/wdnmd/gh-pages/insideadministrtor.py")
                                     else:
                                         bar = st.progress(0)
                                         for i in range(100):
