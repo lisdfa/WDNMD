@@ -47,7 +47,7 @@ if sidebar == "注册":
                 if project_secreat == project_resuresecreat:
                 #在这里添加业务逻辑
                     s = ''.join(project_name)
-                    with open("zhucebiao.txt", "rt", encoding='utf-8') as f:
+                    with open("zhucebiao.csv", "rt", encoding='utf-8') as f:
                         for i in f:
                             l_line = i.split()
                             id_regist = l_line[0]
@@ -62,7 +62,7 @@ if sidebar == "注册":
                                 st.write("请输入用户名:%s, 请输入密码:%s, 请确认密码:%s" %(project_user, project_secreat, project_resuresecreat))
                                 st.success("已被注册！错误！")
                         if flag == 1:
-                            with open("zhucebiao.txt", "a") as f:
+                            with open("zhucebiao.csv", "a") as f:
                                 pwdSec = md5(project_secreat)
                                 f.write("\n"+project_user+","+pwdSec+","+s)
                                 bar = st.progress(0)
@@ -99,7 +99,7 @@ elif sidebar == "登录":
             submitted = st.form_submit_button("提交")
             if submitted:
                     flag = 0
-                    with open("zhucebiao.txt", "rt",encoding='utf-8') as f:
+                    with open("zhucebiao.csv", "rt",encoding='utf-8') as f:
                         for i in f:
                             l_line = i.split(",")
                             if l_line[0] == project_user1:
