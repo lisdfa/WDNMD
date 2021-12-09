@@ -34,8 +34,8 @@ sidebar = st.sidebar.radio(
 if sidebar == "失物管理":
     st.title("失物管理")
     # 项目选择框
-    project_name = st.selectbox(
-        "请选择失物",
+    project_name = st.text_input(
+        "请输入失物",
         ["文具", "首饰","电子产品","其他"]
     )
     if project_name:
@@ -47,8 +47,11 @@ if sidebar == "失物管理":
             project_info_4 = st.text_input("备注信息", "message")
             submitted = st.form_submit_button("提交")
             if submitted:
+                b = "".join(project_name)
                 with open('lostiformation.vsc.txt','a') as f:
                     f.write("\n")
+                    f.write(project_name)
+                    f.write(",")
                     f.write(project_info_1)
                     f.write(",")
                     f.write(project_info_2)
