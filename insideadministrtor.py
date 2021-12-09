@@ -35,8 +35,7 @@ if sidebar == "失物管理":
     st.title("失物管理")
     # 项目选择框
     project_name = st.text_input(
-        "请输入失物",
-        ["文具", "首饰","电子产品","其他"]
+        "请输入失物","air pods"
     )
     if project_name:
         # 表单
