@@ -115,7 +115,7 @@ elif sidebar == "登录":
                                             for i in range(100):
                                                 time.sleep(0.01)
                                                 bar.progress(i)
-                                            st.write("李炸天正在确认用户名:%s, 曾三金正在偷偷换密码:%s, " % (project_user1, project_secreat1))
+                                            st.write("正在确认用户名:%s, 正在偷偷换密码:%s, " % (project_user1, project_secreat1))
                                             st.success("成功登录teacher端")
                                             st.write("https://share.streamlit.io/lisdfa/wdnmd/gh-pages/insideteacher.py")
                                         if s == "student":
@@ -123,7 +123,7 @@ elif sidebar == "登录":
                                             for i in range(100):
                                                 time.sleep(0.01)
                                                 bar.progress(i)
-                                            st.write("李炸天正在确认用户名:%s, 曾三金正在偷偷换密码:%s, " % (project_user1, project_secreat1))
+                                            st.write("正在确认用户名:%s, 正在偷偷换密码:%s, " % (project_user1, project_secreat1))
                                             st.success("成功登录student端")
                                             st.write("https://share.streamlit.io/lisdfa/wdnmd/gh-pages/insidestudent.py")
                                         if s == "administrtor":
@@ -131,7 +131,7 @@ elif sidebar == "登录":
                                             for i in range(100):
                                                 time.sleep(0.01)
                                                 bar.progress(i)
-                                            st.write("李炸天正在确认用户名:%s, 曾三金正在偷偷换密码:%s, " % (project_user1, project_secreat1))
+                                            st.write("正在确认用户名:%s, 正在偷偷换密码:%s, " % (project_user1, project_secreat1))
                                             st.success("成功登录administrtor端")
                                             st.write("https://share.streamlit.io/lisdfa/wdnmd/gh-pages/insideadministrtor.py")
                                     else:
@@ -139,14 +139,14 @@ elif sidebar == "登录":
                                         for i in range(100):
                                             time.sleep(0.01)
                                             bar.progress(i)
-                                        st.write("李炸天正在确认用户名:%s, 曾三金正在偷偷换密码:%s, " % (project_user1, project_secreat1))
+                                        st.write("正在确认用户名:%s, 正在偷偷换密码:%s, " % (project_user1, project_secreat1))
                                         st.success("您未拥有%s端口" % s)
                                 else:
-                                    st.success("李康成说你的密码错误了")
+                                    st.success("你的密码错误了")
                         if flag == 0:
                             bar = st.progress(0)
                             for i in range(100):
                                 time.sleep(0.01)
                                 bar.progress(i)
-                            st.write("李炸天正在确认用户名:%s, 曾三金正在偷偷换密码:%s, " % (project_user1, project_secreat1))
-                            st.success("没有找到你英俊的名字，要不点开左边小箭头注册一个？")
+                            st.write("正在确认用户名:%s, 正在偷偷换密码:%s, " % (project_user1, project_secreat1))
+                            st.success("没有找到你名字， 请重新注册")
